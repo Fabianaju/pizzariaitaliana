@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Gloock:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pizzaria Massa e Sabor</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header__container d-flex justify-content-between align-items-center p-3">
+        <!-- Logo à esquerda -->
+        <div class="logo">
+            <img src="assets/logo-pizzaria.png" alt=" Pizzaria  Massa e Sabor" class="img-fluid">
+        </div>
+        
+        <!-- Menu de navegação centralizado (visível em telas grandes) -->
+        <nav class="main-nav d-none d-lg-block">
+            <ul class="d-flex gap-4">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+         <a href="#reserva" class="btn btn-reservar-mesa d-none d-lg-block">Reservar Mesa</a>
+
+        <!-- Menu hamburguer para telas pequenas -->
+        <button class="menu-toggle d-lg-none">&#9776;</button>
+    </header>
+
+    <!-- Menu hamburguer (oculto inicialmente) -->
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Hero -->
+<section class="hero d-flex align-items-center">
+    <div class="hero-content d-flex align-items-center">
+        <div class="hero-image">
+            <img src="assets/pizza.png" alt="Imagem de Pizza" class="img-fluid">
+        </div>
+        <div class="hero-text">
+            <h1 class="animated-text">Pizzaria Delícia Italiana</h1>
+            <p class="highlighted-text">Saboreie as melhores pizzas com ingredientes frescos e receitas autênticas!</p>
+
+            <a href="#menu" class="btn btn-primary mt-4">Explore Nosso Menu</a>
+
+            <!-- Ícones das Redes Sociais  -->
+            <div class="social-icons mt-4">
+                <a href="https://facebook.com" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Seção Sobre Nós -->
+<section id="sobre" class="sobre">
+    <div class="container">
+        <div class="sobre__imagem">
+            <img src="assets/sobre-pizzaria.png" alt="Sobre Nós">
+        </div>
+        <div class="sobre__texto">
+            <h2 class="pulse-text">Nossa História</h2>
+            <p>Desde 1990, trazemos o sabor autêntico da Itália para sua mesa. Com ingredientes selecionados e receitas tradicionais, nossa pizzaria oferece uma experiência gastronômica incomparável.</p>
+            <a href="#mais" class="btn-saber-mais">Saiba Mais</a>
+        </div>
+    </div>
+</section>
+
+   <!-- Seção Menu -->
+    <div class="container text-center">
+        <h2 class="menu__title">Nosso Menu</h2>
+        <div class="menu__grid">
+            <div class="menu-item">
+                <img src="assets/pizza1.png" alt="Pizza Margherita" class="menu-item__image">
+                <h3 class="menu-item__title">Pizza Margherita</h3>
+                <p class="menu-item__price">R$ 30,00</p>
+                <a href="#compra" class="btn-buy">Pedir Agora</a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/pizza2.png" alt="Pizza de Calabresa" class="menu-item__image">
+                <h3 class="menu-item__title">Pizza de Calabresa</h3>
+                <p class="menu-item__price">R$ 35,00</p>
+                <a href="#compra" class="btn-buy">Pedir Agora</a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/pizza3.png" alt="Pizza Quatro Queijos" class="menu-item__image">
+                <h3 class="menu-item__title">Pizza Quatro Queijos</h3>
+                <p class="menu-item__price">R$ 40,00</p>
+                <a href="#compra" class="btn-buy">Pedir Agora</a>
+            </div>
+            <div class="menu-item">
+                <img src="assets/pizza4.png" alt="Pizza Portuguesa" class="menu-item__image">
+                <h3 class="menu-item__title">Pizza Portuguesa</h3>
+                <p class="menu-item__price">R$ 38,00</p>
+                <a href="#compra" class="btn-buy">Pedir Agora</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="chefs">
+    <div class="chefs__container">
+        <h2>Nossos Chefs</h2>
+        <div class="chefs__list">
+            <div class="chef">
+                <img src="assets/chef1.png" alt="Chef Mario Rossi" class="chef__photo">
+                <h3 class="chef__name">Mario Rossi</h3>
+                <p class="chef__description">Especialista em pizzas tradicionais italianas com mais de 20 anos de experiência.</p>
+                <div class="chef__social-icons">
+                    <a href="https://facebook.com/chef_mario" target="_blank" class="chef__social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/chef_mario" target="_blank" class="chef__social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/chef_mario" target="_blank" class="chef__social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/chef_mario" target="_blank" class="chef__social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="chef">
+                <img src="assets/chef2.png" alt="Chef Giulia Bianchi" class="chef__photo">
+                <h3 class="chef__name">Giulia Bianchi</h3>
+                <p class="chef__description">Conhecida por suas receitas inovadoras e combinações de sabores únicas.</p>
+                <div class="chef__social-icons">
+                    <a href="https://facebook.com/chef_giulia" target="_blank" class="chef__social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/chef_giulia" target="_blank" class="chef__social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/chef_giulia" target="_blank" class="chef__social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/chef_giulia" target="_blank" class="chef__social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="chef">
+                <img src="assets/chef3.png" alt="Chef Luca Verdi" class="chef__photo">
+                <h3 class="chef__name">Luca Verdi</h3>
+                <p class="chef__description">Expert em pizzas de massa fina e crocante, com um toque especial em cada prato.</p>
+                <div class="chef__social-icons">
+                    <a href="https://facebook.com/chef_luca" target="_blank" class="chef__social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/chef_luca" target="_blank" class="chef__social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/chef_luca" target="_blank" class="chef__social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/chef_luca" target="_blank" class="chef__social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Seção Galeria -->
+    <section id="galeria">
+        <div class="container text-center">
+            <h2 class="galeria-title">Galeria</h2>
+            <div class="galeria__grid">
+                <img src="assets/pizza-galeria1.png" alt="Pizza Clássica" class="galeria-image">
+                <img src="assets/pizza-galeria2.png" alt="Pizza Especial" class="galeria-image">
+                <img src="assets/pizza-galeria3.png" alt="Pizza Tradicional" class="galeria-image">
+                <img src="assets/pizza-galeria4.png" alt="Pizza Tradicional" class="galeria-image">
+                <img src="assets/pizza-galeria5.png" alt="Pizza Clássica" class="galeria-image">
+                <img src="assets/pizza-galeria6.png" alt="Pizza Especial" class="galeria-image">
+                <img src="assets/pizza-galeria7.png" alt="Pizza Tradicional" class="galeria-image">
+                <img src="assets/pizza-galeria8.png" alt="Pizza Tradicional" class="galeria-image">
+            </div>
+        </div>
+    </section>
+    <!-- Seção Contato -->
+    <section id="contato" style="background-color: #f7f7f7; padding: 50px 0;">
+        <div class="container">
+            <h2 class="contato-title">Entre em Contato</h2>
+            <div class="formulario-container">
+                <div class="formulario">
+                    <form>
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Seu E-mail">
+                        </div>
+                        <div class="campo">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+                        </div>
+                        <div class="campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="contato-info">
+                    <img src="assets/contact-icon.png" alt="Ícone de Contato">
+                    <p><strong>Endereço:</strong> Rua das Pizzas, 123, São Paulo - SP</p>
+                    <p><strong>E-mail:</strong> contato@pizzariadelicia.com.br</p>
+                    <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Rodapé -->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__logo">
+            <img src="assets/logo-pizzaria.png" alt="Logo Pizzaria Delícia Italiana" class="img-fluid">
+        </div>
+        <div class="footer__social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 Pizzaria Delícia Italiana. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+     <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        menuToggle.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
